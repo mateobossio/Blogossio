@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <body>
+    <nav>
+    <div class="tittle">
+            <h1> BOSSIOLOG</h1>
+            <h2> DONDE LE AGREGAMOS BOSSIO A TODO </h2>
+            </div>
+            <ul id="menu">
+            <li><a href="{% url 'blog_bossio:home' %}">Home</a></li>
+            <li><a href="{% url 'blog_bossio:noticias' %}">Noticias</a></li>
+            <li><a href="{% url 'blog_bossio:herramientas' %}">Herramientas</a></li>
+            <li><a href="{% url 'blog_bossio:contactos' %}">Contacto</a></li>
+            <li><a href="{% url 'blog_bossio:masinformacion' %}">Mas info</a></li>
+            </ul>
+            <div class="border">  
+            {% block content %}
+
+            {% endblock %}
+            </div>
+            <ul id="menu">
+            <li><a href="{% url 'blog_bossio:home' %}">Home</a></li>
+            <li><a href="{% url 'blog_bossio:noticias' %}">Noticias</a></li>
+            <li><a href="{% url 'blog_bossio:herramientas' %}">Herramientas</a></li>
+            <li><a href="{% url 'blog_bossio:contactos' %}">Contacto</a></li>
+            <li><a href="{% url 'blog_bossio:masinformacion' %}">Mas info</a></li>
+            </ul>
+        </nav>
+        <script src="{% static 'js/jquery-1.11.3.js' %}"></script>
+        {% block scripts %}
+
+            {% endblock %}
+        
+    </body>
+</html>

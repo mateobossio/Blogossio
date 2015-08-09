@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <h2> Contactenos </h2>
+    <hr>
+    <br>
+    <h3> Si quiere ser todo un Bossio </h3>
+    <div class="usuario">
+        Nombre (+ssio) :<br>    
+        <input type="text" name:"Nombre" id="name" value=""></input><br>
+        Email:<br>
+        <input type="text" name:"Email" id="email"></input><br>
+        Asuntossio:<br>
+        <input type="text" name:"Asunto" id="asunto"></input><br>
+    </div>
+    <div class="mensaje">
+    Mensaje:<br>
+    <textarea type="text" size="60" name="Email" id="mensaje" rows="6" cols="65"></textarea>
+    </div>
+    <div class="random">
+    <button type="button" id="btn1" onmouseover="Change(this)" onclick="Mensaje()" align="right">ENVIAR</button>
+    </div>
+    <a href="{% url 'blog_bossio:contact'%}">Enviar un mensaje de verdad</a>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/contacto.js' %}"></script>
+{% endblock %}

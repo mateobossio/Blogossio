@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    
+<title>This is my page</title>
+<h2> Posts Recientes </h2>
+{% for post in posts %}
+    <div class="posts">
+    <h3>{{post.titulo_txt}}</h3>
+    <a href="{% url 'blog_bossio:posts' post.id %}">Mas info</a>
+    <p>{{post.txt_resumen}}</p>
+    </div>
+{% endfor %}
+<br>
+<hr>
+<br>
+<h2> Explorar por Categorias </h2>
+{% for categoria in categorias %}
+    <h3><li><a href="{% url 'blog_bossio:categoria' categoria.id %}">{{categoria.titulo_txt}}></a></li></h3>
+{% endfor %}
+<br>
+<hr>
+<br>
+<h3> THE ORIGINALOSSIOS </h3>
+<img ALIGN=CENTER src="{% static 'img/originalossio.png' %}" alt="Changin img" id="imagen">
+<br>
+<div class="progress">
+    <img src="{% static 'img/progres.png' %}" name="bar"/>
+</div>
+<br>
+<input id="%" type="text" value=""/>
+<br>
+<script>var ruta = "{% static 'img/' %}" </script>
+<script src="{% static 'js/home.js' %}"></script>
+<script src="{% static 'js/jquery-1.11.3.js' %}"></script>    
+
+{% endblock %}
+

@@ -1,0 +1,218 @@
+body {
+    background-color: lightslategrey;
+    /*background-image:url("wallpaper.png");*/
+}
+
+h1 {
+    text-align: center;
+    color: rgba(65, 65, 120, 1);
+    text-decoration: underline;
+    font-size: 60px;;
+    
+}
+
+h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(65, 65, 120, 1);;
+}
+
+h3{
+    font-family: arial;
+    color: rgba(40, 39, 56, 1);
+    font-size: 25px;
+}
+
+h4{
+    font-family: arial;
+    font-size: 12px;
+    font-style: oblique;
+}
+
+.border {
+    background-color: whitesmoke;
+    margin-top: -24px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding:50px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.tittle {
+    margin-top: -8px;
+    margin-left: -40px;
+    margin-right: -7px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    background-color: #F5F5F5;
+}
+
+#menu {
+    padding-top: 14px;
+    padding-bottom: 23px;
+    margin-top: -26px;
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+#menu li {
+display: inline;
+}
+
+#menu li a {
+font-family: Arial;
+font-size:20px;
+text-decoration: none;
+float:center;
+padding-left:75.8px;
+padding-right:75.8px;
+padding-top:13px;
+padding-bottom:14px;
+background-color: darkgrey;
+color: rgba(65, 65, 120, 1);
+}
+
+#menu li a:hover {
+background-color: lightgrey;
+padding-top:16px;
+padding-bottom:14px;
+}
+.boton{
+    list-style: none;
+}
+.boton a{
+font-family: sans-serif; 
+font-size: 18px; 
+padding: 10px 30px; 
+border: 3px solid rgba(65, 65, 120, 1);;
+margin-left:-40px;
+}
+
+.usuario {
+    margin-left: 10%;
+    font-family: arial;
+    margin-top: 6%;
+    height: 150px;
+    width: 250px;
+}
+
+.mensaje {
+    margin-left: 35%;
+    font-family: sans-serif;
+    width: 500px;
+    height: 150px;
+    margin-top: -149px;
+}
+
+.conversordatos{
+    background-color: #A9A9A9;
+    margin-left: 155px;
+    margin-right: 650px;
+    padding-left: 68px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.conversor{
+    background-color: #A9A9A9;
+    margin-left: 456px;
+    margin-right: 232px;
+    padding-left: 61px;
+    margin-top: -132px;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+}
+
+.combo{
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 3px solid #414178;
+    margin-left: -60px;
+}
+
+.convertir{
+    background-color: #A9A9A9;
+    border-radius: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 291px;
+    padding-right: 100px;
+    margin-left: 153px;
+    margin-top: 10px;
+    margin-right: 230px;
+    padding: 10px 290px 10px 291px;
+}
+
+.noticias {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.calcu {
+    background-color: #A9A9A9;
+    padding: 20px;
+    margin-left: 320px;
+    margin-right: 320px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.botones {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: 3px solid #414178;
+    margin-left: -5px;
+    text-align: center;
+}
+
+.botonsito{
+    font-family: sans-serif;
+    border: 3px solid #414178;
+    color: black;
+    font-size: 17px;
+}
+
+.progress {
+    background-color: darkgrey;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 290px;
+    margin-right: 290px;
+}
+
+.cron{
+    background-color: #A9A9A9;
+    padding: 5px;
+    margin-left: 320px;
+    margin-right: 320px;
+    font-size: 70px;
+    text-align: center;
+    
+}
+
+.botones2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 13px 10px;
+    border: 3px solid #414178;
+    margin-left: -22px;
+    text-align: center;
+    margin-right: -1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.posts {
+    background-color: #F5F5F5;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 20px 30px;
+    text-align: center;
+    border: 5px solid #A9A9A9;

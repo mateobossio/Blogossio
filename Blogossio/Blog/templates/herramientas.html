@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <h2> Estas algunas herramientas de nuestra pagina </h2>
+    <hr>
+    <br>
+    <h3> Conversor de Modnedas </h3>
+    <br>
+    <div class="conversordatos">
+        <select id = "comboloco" class="combo">
+        <option value="1">Dolar</option>
+        <option value="2">Peso ARG</option>
+        <option value="3">Real</option>
+        <option value="4">Euro</option>
+        <option value="5">Libra</option>
+        <option value="6">Peso UR</option>
+        <option value="7">Peso CH</option>
+        </select>
+        <br>
+        <br>
+        <select id = "comboloco2" class="combo">
+        <option value="1">Dolar</option>
+        <option value="2">Peso</option>
+        <option value="3">Real</option>
+        <option value="4">Euro</option>
+        <option value="5">Libra</option>
+        <option value="6">Peso UR</option>
+        <option value="7">Peso CH</option>
+        </select>
+    </div>
+    <div class="conversor">
+        Monto:
+        <input id="monto" type="text" value=""></p>
+        Valor:   
+        <input id="vuelto" type="text" value=""></p>
+    </div>
+    <div class="convertir">
+        <button type="button" onclick="Convertir()" align= center class="botonsito" >Continuar</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h3> La Calculadora </h3>
+    <br>
+    <div class="calcu">
+        <input id="resultado" type="text" value="" style="width: 354px; height:60px; font-size:40px;"/>
+        <br>
+        <input type="button" id="btn1" onclick="ejecutar(this)" value="1" class="botones"/>
+        <input type="button" id="btn2" onclick="ejecutar(this)" value="2" class="botones"/>
+        <input type="button" id="btn3" onclick="ejecutar(this)" value="3" class="botones"/>
+        <input type="button" id="btnmas" onclick="ejecutar(this)" value="+" class="botones"/>
+        <br>
+        <input type="button" id="btn4" onclick="ejecutar(this)" value="4" class="botones"/>
+        <input type="button" id="btn5" onclick="ejecutar(this)" value="5" class="botones"/>
+        <input type="button" id="btn6" onclick="ejecutar(this)" value="6" class="botones"/>
+        <input type="button" id="btnmenos" onclick="ejecutar(this)" value="-" class="botones"/>
+        <br>
+        <input type="button" id="btn7" onclick="ejecutar(this)" value="7" class="botones"/>
+        <input type="button" id="btn8" onclick="ejecutar(this)" value="8" class="botones"/>
+        <input type="button" id="btn9" onclick="ejecutar(this)" value="9" class="botones"/>
+        <input type="button" id="btnpor" onclick="ejecutar(this)" value="*" class="botones"/>
+        <br>
+        <input type="button" id="btnp" onclick="ejecutar(this)" value="." class="botones"/>
+        <input type="button" id="btn0" onclick="ejecutar(this)" value="0" class="botones"/>
+        <input type="button" id="btne" onclick="ejecutar(this)" value="=" class="botones"/>
+        <input type="button" id="btndiv" onclick="ejecutar(this)" value="/" class="botones"/>
+        <br>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h3> El Cronometro </h3>
+    <br>
+    <div class="cron">
+        <div id=reloj>
+        00 : 00 : 00
+        </div>
+        <input type="button" class="botones2" id=empezar onclick=iniciar() value=Start />
+        <input type="button" class="botones2" id=stop onclick=parar() value=Stop />
+        <input type="button" class="botones2" id=vuelta onclick=vuelta() value=Vuelta />
+        <input type="button" class="botones2" id=Reset onclick=reiniciar() value=Reset />
+        <div id="vueltas">
+        <h3> Vueltas: </h3>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/herramientas.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,9 @@
+from django.conf.urls import patterns, include, url
+
+urlpatterns = patterns('',
+	url(r'^$', 'blog.views.home', name='home'),
+	url(r'^noticias/', 'Blog.views.noticia', name='noticias'),
+	url(r'^herramientas/', 'Blog.views.herramienta', name='herramientas'),
+	url(r'^contactos/', 'Blog.views.contacto', name='contactos'),
+	url(r'^masinformacion/', 'Blog.views.masinfo', name='masinformacion'),
+                       )
